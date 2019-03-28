@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.btn-group {
+  float: right;
+}

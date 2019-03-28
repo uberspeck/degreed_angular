@@ -1,0 +1,24 @@
+<div class="btn-group">
+
+  <button
+    id="allMovies"
+    type="button"
+    class="btn"
+    (click)="selectDecade(null)"
+    [ngClass]="{
+      'btn-primary': !selectedDecade,
+      'bg-light border-secondary': selectedDecade
+    }">All Movies</button>
+
+  <button
+    id="decade{{choice}}"
+    type="button"
+    class="btn"
+    *ngFor="let choice of decadeChoices"
+    (click)="selectDecade(choice)"
+    [ngClass]="{
+      'btn-primary': choice === selectedDecade,
+      'bg-light border-secondary': choice !== selectedDecade
+    }">{{choice}}'s</button>
+
+</div>

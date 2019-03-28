@@ -1,0 +1,14 @@
+<div class="movie-list">
+
+  <degreed-movie-decade-picker
+    [selectedDecade]="selectedDecade"
+    [decadeChoices]="decadeChoices"
+    (select)="selectDecade($event)"></degreed-movie-decade-picker>
+
+  <div class="list-wrapper">
+    <degreed-movie-card
+      *ngFor="let movie of movieData | filterByDecade:selectedDecade"
+      [movie]="movie"></degreed-movie-card>
+  </div>
+
+</div>

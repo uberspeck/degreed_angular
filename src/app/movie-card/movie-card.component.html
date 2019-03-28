@@ -1,0 +1,32 @@
+<div class="movie-card">
+
+  <div class="movie-wrapper">
+
+    <div class="movie-poster">
+      <img
+        [src]="movie.localPosterUrl"
+        alt="{{movie.Title}} Poster">
+    </div>
+
+    <div class="movie-details">
+
+      <h1 class="movie-title">{{movie.Title}}</h1>
+      <hr>
+
+      <div class="movie-meta meta-font">
+        <span class="movie-rated">{{movie.Rated}}</span>
+        <span class="movie-runtime">{{movie.Runtime}}</span>
+        <span class="movie-released">{{movie.Released}}</span>
+      </div>
+
+      <p class="movie-plot meta-font">{{movie.Plot}}</p>
+
+      <button
+        class="btn btn-warning view-on-imdb"
+        (click)="viewOnImdb()">View on IMDB</button>
+
+    </div>
+
+  </div>
+
+</div>

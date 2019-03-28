@@ -1,0 +1,167 @@
+:host {
+  display: block;
+}
+
+.movie-card {
+  display: table;
+  width: 100%;
+  background: #e8ebee;
+  border: {
+    width: 2px;
+    color: black;
+    style: solid;
+    radius: 10px;
+  }
+  margin: 10px 0;
+}
+
+.movie-wrapper {
+  display: table-row;
+}
+
+.movie-poster {
+  display: table-cell;
+  vertical-align: top;
+  img {
+    width: 100%;
+    border-radius: 6px;
+  }
+}
+
+.movie-details {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.movie-title {
+  margin: 0;
+}
+
+.movie-meta {
+  clear: both;
+  padding-top: 5px;
+}
+.movie-rated {
+  display: inline-block;
+  margin-right: 20px;
+  color: #99a3a8;
+  font-family: monospace;
+  border: {
+    style: solid;
+    width: 1px;
+    color: #99a3a8;
+    radius: 5px;
+  }
+  padding: 0 4px;
+}
+.movie-released {
+  float: right;
+}
+
+hr {
+  margin: 0 3px;
+}
+
+.view-on-imdb {
+  color: #fff;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .movie-poster {
+    width: 120px;
+  }
+  .movie-poster,
+  .movie-details {
+    padding: 5px;
+  }
+  .movie-title {
+    font-size: 15px;
+  }
+  .movie-plot {
+    margin-top: 10px;
+  }
+  .meta-font {
+    font-size: 10px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .movie-poster {
+    width: 150px;
+  }
+  .movie-poster,
+  .movie-details {
+    padding: 5px;
+  }
+  .movie-title {
+    font-size: 20px;
+  }
+  .movie-plot {
+    margin-top: 12px;
+  }
+  .meta-font {
+    font-size: 12px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .movie-poster {
+    width: 180px;
+  }
+  .movie-poster,
+  .movie-details {
+    padding: 10px;
+  }
+  .movie-title {
+    font-size: 30px;
+  }
+  .movie-plot {
+    margin-top: 15px;
+  }
+  .meta-font {
+    font-size: 15px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .movie-poster {
+    width: 200px;
+  }
+  .movie-poster,
+  .movie-details {
+    padding: 15px;
+  }
+  .movie-title {
+    font-size: 40px;
+  }
+  .movie-plot {
+    margin-top: 18px;
+  }
+  .meta-font {
+    font-size: 18px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .movie-poster {
+    width: 300px;
+  }
+  .movie-poster,
+  .movie-details {
+    padding: 20px;
+  }
+  .movie-title {
+    font-size: 50px;
+  }
+  .movie-plot {
+    margin-top: 20px;
+  }
+  .meta-font {
+    font-size: 30px;
+  }
+}
